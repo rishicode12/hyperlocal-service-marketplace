@@ -15,7 +15,7 @@
 Develop a service booking platform where users can hire local professionals (plumbers, electricians, etc.) with live tracking, ratings, and secure payment options. 
 
 ### Use Case
-Build a small-scale **Urban Company-style** platform to understand hyperlocal service logistics and provider-user management.
+Build a small-scale platform to understand hyperlocal service logistics and provider-user management.
 
 ---
 
@@ -72,7 +72,7 @@ urban-ease/
 Clone the repo:
 
 Bash
-git clone [https://github.com/yourusername/urbanease.git](https://github.com/yourusername/urbanease.git)
+git clone [https://github.com/rishicode12/hyperlocal-service-marketplace.git](https://github.com/rishicode12/hyperlocal-service-marketplace.git)
 Install dependencies:
 
 Bash
@@ -89,6 +89,4 @@ npm run build
 The app is built with a mobile-first approach using Tailwind CSS. The Provider Directory utilizes a dynamic grid that collapses from 4 columns to 1 or 2 based on the viewport size to ensure accessibility across all devices.
 
 ## 🙏 Acknowledgments
-Powered by React and Vite.
 
-Design inspired by modern hyperlocal service platforms.
