@@ -1,102 +1,94 @@
-# React
+# UrbanEase | Hyperlocal Service Booking Platform
 
-A modern React-based project utilizing the latest frontend technologies and tools for building responsive web applications.
+[![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactjs.org/)
+[![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)](https://nodejs.org/)
+[![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)](https://www.mongodb.com/)
+[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://javascript.info/)
+[![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
+[![Express.js](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)](https://expressjs.com/)
+[![Redux](https://img.shields.io/badge/Redux-764ABC?style=for-the-badge&logo=redux&logoColor=white)](https://redux-toolkit.js.org/)
+[![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev/)
 
-## 🚀 Features
+---
 
-- **React 18** - React version with improved rendering and concurrent features
-- **Vite** - Lightning-fast build tool and development server
-- **Redux Toolkit** - State management with simplified Redux setup
-- **TailwindCSS** - Utility-first CSS framework with extensive customization
-- **React Router v6** - Declarative routing for React applications
-- **Form Management** - React Hook Form for efficient form handling
-- **Animation** - Framer Motion for smooth UI animations
+## 📌 Project Problem Statement
+Develop a service booking platform where users can hire local professionals (plumbers, electricians, etc.) with live tracking, ratings, and secure payment options. 
 
-## 📋 Prerequisites
+### Use Case
+Build a small-scale **Urban Company-style** platform to understand hyperlocal service logistics and provider-user management.
 
-- Node.js (v14.x or higher)
-- npm or yarn
+---
 
-## 🛠️ Installation
+## 🚀 Key Modules
 
-1. Install dependencies:
-   ```bash
-   npm install
-   # or
-   yarn install
-   ```
-   
-2. Start the development server:
-   ```bash
-   npm start
-   # or
-   yarn start
-   ```
+* **User Registration:** OTP-based optional with JWT Authentication.
+* **Location-based Service Search:** Find providers based on proximity and category.
+* **Provider Directory:** A responsive grid layout featuring pricing, ratings, and experience.
+* **Ratings & Reviews:** Verified feedback system for service quality.
+* **Booking History:** Dedicated dashboards for both Users and Providers.
+* **Admin Panel:** Centralized management for Services, Providers, and Bookings.
+* **Payment Gateway:** Integrated with Razorpay or Stripe for secure transactions.
+
+---
+
+## 🛠️ Tech Stack & Features
+
+- **Frontend:** React 18, Vite, TailwindCSS, Redux Toolkit, Framer Motion.
+- **Backend:** Node.js, Express.js.
+- **Database:** MongoDB with Mongoose ODM.
+- **Security:** Bcrypt Password Hashing & JWT Role-based Access (User/Provider/Admin).
+
+---
+
+## 📅 Development Plan (Week-wise)
+
+| Week | Backend (Node.js + Express) | Frontend (React.js) |
+| :--- | :--- | :--- |
+| **Week 1** | JWT Auth, Role Access, Bcrypt Hashing | Setup, Auth UI, Homepage |
+| **Week 2** | Service APIs: List, Book, Manage | API Integration, Service Listings, Booking Forms |
+| **Week 3** | Booking Status APIs, Review Integration | Dashboard, Ratings UI, Payment Gateway |
+| **Week 4** | API Cleanup, Testing, Admin Logic | Responsive UI, Admin Dashboard, Final Review |
+
+---
 
 ## 📁 Project Structure
 
-```
-react_app/
+```text
+urban-ease/
 ├── public/             # Static assets
 ├── src/
-│   ├── components/     # Reusable UI components
-│   ├── pages/          # Page components
-│   ├── styles/         # Global styles and Tailwind configuration
-│   ├── App.jsx         # Main application component
-│   ├── Routes.jsx      # Application routes
-│   └── index.jsx       # Application entry point
-├── .env                # Environment variables
-├── index.html          # HTML template
-├── package.json        # Project dependencies and scripts
-├── tailwind.config.js  # Tailwind CSS configuration
-└── vite.config.js      # Vite configuration
+│   ├── components/     # Reusable UI (Cards, Filters, Nav)
+│   ├── pages/          # Home, ProviderGrid, Dashboard
+│   ├── store/          # Redux State Management
+│   ├── styles/         # Tailwind Global Styles
+│   ├── App.jsx         # Main App Component
+│   └── Routes.jsx      # Navigation Logic
+├── .env                # API Keys & Secrets
+├── tailwind.config.js  # UI Theme Configuration
+└── vite.config.js      # Build Tool Config
 ```
 
-## 🧩 Adding Routes
+## 🔧 Installation & Usage
+Clone the repo:
 
-To add new routes to the application, update the `Routes.jsx` file:
+Bash
+git clone [https://github.com/yourusername/urbanease.git](https://github.com/yourusername/urbanease.git)
+Install dependencies:
 
-```jsx
-import { useRoutes } from "react-router-dom";
-import HomePage from "pages/HomePage";
-import AboutPage from "pages/AboutPage";
+Bash
+npm install
+Start Development Server:
 
-const ProjectRoutes = () => {
-  let element = useRoutes([
-    { path: "/", element: <HomePage /> },
-    { path: "/about", element: <AboutPage /> },
-    // Add more routes as needed
-  ]);
+Bash
+npm run dev
+Production Build:
 
-  return element;
-};
-```
-
-## 🎨 Styling
-
-This project uses Tailwind CSS for styling. The configuration includes:
-
-- Forms plugin for form styling
-- Typography plugin for text styling
-- Aspect ratio plugin for responsive elements
-- Container queries for component-specific responsive design
-- Fluid typography for responsive text
-- Animation utilities
-
-## 📱 Responsive Design
-
-The app is built with responsive design using Tailwind CSS breakpoints.
-
-
-## 📦 Deployment
-
-Build the application for production:
-
-```bash
+Bash
 npm run build
-```
+📱 Responsive Design
+The app is built with a mobile-first approach using Tailwind CSS. The Provider Directory utilizes a dynamic grid that collapses from 4 columns to 1 or 2 based on the viewport size to ensure accessibility across all devices.
 
 ## 🙏 Acknowledgments
+Powered by React and Vite.
 
-- Powered by React and Vite
-- Styled with Tailwind CSS
+Design inspired by modern hyperlocal service platforms.
