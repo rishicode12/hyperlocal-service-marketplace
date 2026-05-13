@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Icon from '../../../components/AppIcon';
 import Button from '../../../components/ui/Button';
 import Image from '../../../components/AppImage';
-import { IMG_PLUMBING, IMG_ELECTRIC, IMG_KITCHEN, IMG_CLEAN, IMG_PAINT, IMG_SPA, IMG_NAIL } from '../../../assets/localImages';
+import { IMG_PLUMBING, IMG_ELECTRIC, IMG_KITCHEN, IMG_CLEAN, IMG_PAINT, IMG_SPA, IMG_NAIL } from '.../../../src/assets/localImages';
 
 const ServiceSelectionStep = ({ onNext, selectedService, setSelectedService }) => {
   const [selectedAddOns, setSelectedAddOns] = useState([]);

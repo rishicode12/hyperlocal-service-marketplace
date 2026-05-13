@@ -1,7 +1,8 @@
-export const IMG_PLUMBING = new URL('../../../images/Plumbing Service image.jpg', import.meta.url).href;
-export const IMG_ELECTRIC = new URL('../../../images/Electric Service image.jpg', import.meta.url).href;
-export const IMG_KITCHEN = new URL('../../../images/Kitchen Service image.jpg', import.meta.url).href;
-export const IMG_CLEAN = new URL('../../../images/Home-Cleaning image.jpg', import.meta.url).href;
-export const IMG_PAINT = new URL('../../../images/paint image.jpg', import.meta.url).href;
-export const IMG_SPA = new URL('../../../images/female-hands-spa.jpg', import.meta.url).href;
-export const IMG_NAIL = new URL('../../../images/Nail Pedicure image.jpg', import.meta.url).href;
+export const IMG_NO_IMAGE = "/assets/images/no_image.png";
+export const IMG_PLUMBING = "/assets/images/Plumbing Service image.jpg";
+export const IMG_ELECTRIC = "/assets/images/Electric Service image.jpg";
+export const IMG_KITCHEN = "/assets/images/Kitchen Service image.jpg";
+export const IMG_CLEAN = "/assets/images/Home-Cleaning image.jpg";
+export const IMG_PAINT = "/assets/images/paint image.jpg";
+export const IMG_SPA = "/assets/images/female-hands-spa.jpg";
+export const IMG_NAIL = "/assets/images/Nail Pedicure image.jpg";

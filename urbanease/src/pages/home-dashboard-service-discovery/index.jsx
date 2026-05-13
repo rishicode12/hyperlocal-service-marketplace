@@ -9,14 +9,15 @@ import QuickAccessTiles from './components/QuickAccessTiles';
 import PromotionsBanner from './components/PromotionsBanner';
  
 
-const plumbingImage = new URL('../../../../images/Plumbing Service image.jpg', import.meta.url).href;
-const electricalImage = new URL('../../../../images/Electric Service image.jpg', import.meta.url).href;
-const kitchenImage = new URL('../../../../images/Kitchen Service image.jpg', import.meta.url).href;
-const spaImage = new URL('../../../../images/female-hands-spa.jpg', import.meta.url).href;
-const cleanImage = new URL('../../../../images/Home-Cleaning image.jpg', import.meta.url).href;
-const nailImage = new URL('../../../../images/Nail Pedicure image.jpg', import.meta.url).href;
-const paintImage = new URL('../../../../images/paint image.jpg', import.meta.url).href;
+// const plumbingImage = new URL('../../../../images/Plumbing Service image.jpg', import.meta.url).href;
+// const electricalImage = new URL('../../../../images/Electric Service image.jpg', import.meta.url).href;
+// const kitchenImage = new URL('../../../../images/Kitchen Service image.jpg', import.meta.url).href;
+// const spaImage = new URL('../../../../images/female-hands-spa.jpg', import.meta.url).href;
+// const cleanImage = new URL('../../../../images/Home-Cleaning image.jpg', import.meta.url).href;
+// const nailImage = new URL('../../../../images/Nail Pedicure image.jpg', import.meta.url).href;
+// const paintImage = new URL('../../../../images/paint image.jpg', import.meta.url).href;
 
+import { IMG_PLUMBING, IMG_ELECTRIC, IMG_KITCHEN, IMG_CLEAN, IMG_PAINT, IMG_SPA, IMG_NAIL } from '../../../src/assets/localImages';
 const HomeDashboardServiceDiscovery = () => {
   const navigate = useNavigate();
   const [isFilterOpen, setIsFilterOpen] = useState(false);
@@ -28,7 +29,7 @@ const HomeDashboardServiceDiscovery = () => {
       id: 1,
       name: "Plumbing Service",
       category: "Plumbing",
-      image: plumbingImage,
+      image: IMG_PLUMBING,
       rating: 4.9,
       reviewCount: 234,
       distance: "0.5 mi",
@@ -40,7 +41,7 @@ const HomeDashboardServiceDiscovery = () => {
       id: 2,
       name: "Electric Service",
       category: "Electrical",
-      image: electricalImage,
+      image: IMG_ELECTRIC,
       rating: 4.8,
       reviewCount: 189,
       distance: "0.8 mi",
@@ -52,7 +53,7 @@ const HomeDashboardServiceDiscovery = () => {
       id: 3,
       name: "Kitchen Service",
       category: "Appliance Repair",
-      image: kitchenImage,
+      image: IMG_KITCHEN,
       rating: 4.7,
       reviewCount: 156,
       distance: "1.2 mi",
@@ -78,7 +79,7 @@ const HomeDashboardServiceDiscovery = () => {
       id: 5,
       name: "Spa & Massage",
       category: "Wellness",
-      image: spaImage,
+      image: IMG_SPA,
       rating: 4.8,
       reviewCount: 278,
       distance: "0.7 mi",
@@ -89,7 +90,7 @@ const HomeDashboardServiceDiscovery = () => {
       id: 6,
       name: "Nails Studio",
       category: "Beauty",
-      image: nailImage,
+      image: IMG_NAIL,
       rating: 4.6,
       reviewCount: 145,
       distance: "1.1 mi",
@@ -103,7 +104,7 @@ const HomeDashboardServiceDiscovery = () => {
       id: 7,
       name: "Clean Services",
       category: "House Cleaning",
-      image: cleanImage,
+      image: IMG_CLEAN,
       rating: 4.9,
       reviewCount: 456,
       distance: "0.4 mi",
@@ -114,7 +115,7 @@ const HomeDashboardServiceDiscovery = () => {
       id: 8,
       name: "Home Painting Services",
       category: "Paint Service",
-      image: paintImage,
+      image: IMG_PAINT,
       rating: 4.7,
       reviewCount: 203,
       distance: "0.9 mi",
